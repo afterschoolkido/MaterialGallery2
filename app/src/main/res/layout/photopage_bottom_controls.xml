@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photopage_bottom_controls"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/root_bottom_bg"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <ImageButton
+        android:id="@+id/photopage_bottom_control_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_edit" />
+
+    <ImageButton
+        android:id="@+id/photopage_bottom_control_share"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_share" />
+
+    <ImageButton
+        android:id="@+id/photopage_bottom_control_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_info" />
+
+    <ImageButton
+        android:id="@+id/photopage_bottom_control_map"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_map" />
+
+    <ImageButton
+        android:id="@+id/photopage_bottom_control_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_trash" />
+
+</LinearLayout>

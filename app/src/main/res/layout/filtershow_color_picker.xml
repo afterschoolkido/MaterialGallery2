@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingStart="@dimen/alert_dialog_padding_material"
+              android:paddingEnd="@dimen/alert_dialog_padding_material">
+
+        <com.android.gallery3d.filtershow.colorpicker.ColorCompareView
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                />
+        <com.android.gallery3d.filtershow.colorpicker.ColorSVRectView
+                android:id="@+id/colorRectView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
+
+        <com.android.gallery3d.filtershow.colorpicker.ColorHueView
+                android:id="@+id/ColorHueView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="32dp" />
+
+        <com.android.gallery3d.filtershow.colorpicker.ColorOpacityView
+                android:id="@+id/colorOpacityView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="32dp" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="end"
+                android:paddingTop="8dp"
+                style="?android:attr/buttonBarStyle">
+
+            <Button
+                    android:id="@+id/cancelColorPick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="?android:attr/selectableItemBackground" />
+
+            <Button
+                    android:id="@+id/applyColorPick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_ok"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+</LinearLayout>
